@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkcyan;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.page {
+  max-width: 750px;
+}
+.box{
+    height: 850px;
+    background-color: white;
+}
+.box1 {
+    background-size: cover;
+    width: 750px;
+    height: 624px ;
+}
+.box2 {
+    background-size: cover;
+    width: 750px;
+    height: 1200px;
+}
+.testimonials{
+    height: 2650px;
+}
+.botimgs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    max-height: 750px;
+}
+.img{
+    height: 375px;
+    width: 375px;
+}
+footer{
+    width: 750px;
+    height: 650px;
+    background-color: #90d4c5; ;
+}
