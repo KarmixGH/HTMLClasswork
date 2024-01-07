@@ -6,26 +6,307 @@
   text-decoration: none;
 }
 
-body>*{
-    padding: 5%;
+body > * {
+  padding: 5%;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero-image{
-    width: 90vw;
-    height: 65vw;
+.bookmark,
+.illustration-features {
+  background-color: #5365e1;
+  width: 70%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-.bookmark{
-    display: flex;
-    align-self: flex-end;
-    background-color: #5063d8;
-    border-radius: 25%;
-    width: 70%;
-    height: 5%;
+.hero-image,
+.illustration-features-tab {
+  width: 88vw;
+  height: 58vw;
+  margin: 5% 0% 5% 0%;
 }
+
+.bookmark-manager {
+  margin-top: 5%;
+}
+
+.bookmark-manager > *,
+.features > *,
+.features-themselves > *,
+.bookmark-in-one-click > *,
+.extensions > *,
+.faq > * {
+  text-align: center;
+}
+
+.bookmark-manager h2,
+.features h2,
+.bookmark-in-one-click h2,
+.extensions h2,
+.faq h2 {
+  font-size: 7vw;
+  color: #231c58;
+}
+
+.bookmark-manager p,
+.features p,
+.bookmark-in-one-click p,
+.extensions p,
+.faq p {
+  font-size: 4.68vw;
+  margin-top: 5%;
+  color: rgb(100, 100, 100);
+}
+
+.transition-buttons {
+  margin-top: 10%;
+}
+
+.transition-buttons button {
+  width: 30vw;
+  height: 10vw;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.15);
+  font-size: 3vw;
+  margin: 1%;
+}
+
+.chrome-button {
+  color: white;
+  background-color: #5365e1;
+}
+
+.firefox-button {
+  color: #2f2d46;
+  background-color: #f7f7f7;
+}
+
+.chrome-button:hover {
+  color: #5365e1;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+.firefox-button:hover {
+  color: #f7f7f7;
+  background-color: #2f2d46;
+  transition: all ease-in-out 0.2s;
+}
+
+.features,
+.extensions,
+.faq,
+.contact-us {
+  margin-top: 40%;
+}
+
+.features-themselves {
+  margin: 10% 0% 20% 0%;
+  text-align: center;
+}
+
+.features-themselves h2 {
+  color: rgb(70, 70, 70);
+  font-size: 5vw;
+  margin: 7% 0% 7% 0%;
+}
+
+.features-themselves h2:hover {
+  color: #2f2d46;
+  border-bottom: 1vw rgba(255, 0, 0, 0.603) solid;
+  transition: all ease-in-out 0.15s;
+  border-radius: 5px;
+}
+
+.feature-link {
+  display: inline-block;
+}
+
+.illustration-features-tab {
+  padding: 5%;
+}
+
+.bookmark-in-one-click {
+  margin-top: 10%;
+}
+
+.extensions-themselves {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.extension {
+  border-radius: 15px;
+  margin-top: 10%;
+  height: 85vw;
+  width: 60vw;
+  -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+}
+
+.web-logo {
+  margin-top: 15%;
+  height: 20vw;
+}
+
+.extension h2 {
+  font-size: 5vw;
+  margin-top: 10%;
+}
+
+.extension p {
+  font-size: 3vw;
+  margin-top: 5%;
+}
+
+.dots-bg {
+  height: 0.75vw;
+  margin-top: 30%;
+}
+
+.install-extension {
+  color: white;
+  background-color: #5365e1;
+  border: none;
+  border-radius: 15px;
+  margin-top: 5%;
+  width: 50vw;
+  height: 10vw;
+  font-size: 3vw;
+}
+
+.install-extension:hover {
+  background-color: white;
+  color: #5365e1;
+  border: 2px #5365e1 solid;
+  transition: all ease-in-out 0.2s;
+}
+
+.faqs-themselves {
+  margin-top: 20%;
+}
+
+.faqs-themselves > * {
+  margin-top: 5%;
+}
+
+.faq1,
+.faq2,
+.faq3,
+.faq4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq1 h2,
+.faq2 h2,
+.faq3 h2,
+.faq4 h2 {
+  text-align: start;
+  font-size: 4vw;
+}
+
+.arrow-down {
+  background-image: url(./images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 3.5vw;
+  width: 3.5vw;
+}
+
+.question {
+  padding: 5%;
+  position: absolute;
+  display: none;
+  width: 88vw;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.1);
+  right: 0;
+  z-index: 2;
+  top: 150%;
+  border-radius: 15px;
+}
+
+.arrow-down:hover .question {
+  display: inline;
+}
+
+.more-info {
+  margin: 10% 0% 10% 33%;
+  color: white;
+  background-color: #5365e1;
+  border: none;
+  border-radius: 15px;
+  width: 30vw;
+  height: 10vw;
+  font-size: 3vw;
+}
+
+.more-info:hover {
+  background-color: white;
+  color: #5365e1;
+  border: 2px #5365e1 solid;
+  transition: all ease-in-out 0.2s;
+}
+
+.contact-us {
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #5365e1;
+  height: 70vw;
+  padding: 5%;
+}
+
+.contact-us h3 {
+  font-size: 4vw;
+}
+
+.contact-us h2 {
+  font-size: 6vw;
+  margin: 5%;
+}
+
+.contact-us input {
+  width: 70vw;
+  height: 10vw;
+  border: 3px #fb5859 solid;
+  border-radius: 10px;
+  padding: 5%;
+  font-size: 3vw;
+}
+
+.contact-us-button{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    background-color:#fb5859 ;
+    width: 70vw;
+  height: 10vw;
+  border-radius: 10px;
+  font-size: 3vw;
+  border: none;
+}
+
+.contact-us-button:hover{
+    background-color: white;
+    color:#fb5859 ;
+transition: all ease-in-out 0.2s;
+
+}
+
