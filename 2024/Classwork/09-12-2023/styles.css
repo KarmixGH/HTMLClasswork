@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+main{
+    height: 700px;
+    width: 700px;
+    background-color: black;
+    border: 2px solid gold;
+    color: white;
+}
+.cube{
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+    border: 2px solid gold;
+    position: relative;
+    top: 350px;
+    left:550px;
+    position: absolute;
+}
+.lorem{
+    margin: 5px;
+}

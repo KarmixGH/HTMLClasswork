@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body > * {
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(./images/image-hero-mobile.jpg);
+  background-size: cover;
+  height: 300px;
+  padding: 5%;
+  box-shadow: 1px 136px 186px -72px rgba(0, 0, 0, 0.69) inset;
+  -webkit-box-shadow: 1px 136px 186px -72px rgba(0, 0, 0, 0.69) inset;
+  -moz-box-shadow: 1px 136px 186px -72px rgba(0, 0, 0, 0.69) inset;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.logo-top {
+  z-index: 3;
+}
+
+.buttons-in-menu {
+  height: 0;
+  width: max(300px, 90vw);
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+.burger-top {
+  position: relative;
+}
+.buttons-in-menu h3 {
+  padding: 5%;
+  color: black;
+}
+.burger-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url("./images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger-top:hover .burger-logo {
+  background-image: url("./images/icon-close-menu.svg");
+}
+
+.burger-top:hover .buttons-in-menu {
+  height: auto;
+  box-shadow: 1px 1px 186px 36px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 186px 36px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 186px 36px rgba(0, 0, 0, 0.75);
+}
+
+.monitor-riser {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5%;
+  box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+}
+
+.logo-riser {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.riser-textbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.riser-textbox p {
+  margin-top: 1vw;
+}
+
+.riser-buttons {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.back-this {
+  height: 10vw;
+  width: 40vw;
+  min-height: 50px;
+  min-width: 180px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3cb4ab;
+  color: white;
+  font-size: 20px;
+}
+
+.back-this:hover {
+  border: 1px black solid;
+  color: black;
+  background-color: transparent;
+  transition: 0.2s all ease-in-out;
+}
+
+.money-tracker {
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5%;
+  box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+}
+
+.text-centering {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.money > hr,
+.backer > hr {
+  margin-top: 20px;
+}
+
+.money h3,
+.backer h3,
+.day h3,
+.about-project h3 {
+  font-size: +30px;
+}
+
+.money p,
+.backer p,
+.day p,
+.about-project p {
+  margin-top: 10px;
+  color: gray;
+}
+
+.about-project {
+  position: relative;
+  top: 60px;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5%;
+  box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px -1px 25px 0px rgba(0, 0, 0, 0.55);
+}
+
+.about-project > p {
+  font-size: 16px;
+}
+
+.stand {
+  padding: 5%;
+  margin-top: 30px;
+  border: 1px rgb(163, 163, 163) solid;
+  border-radius: 10px;
+}
+
+.bamboo > h2,
+.black-edition > h2,
+.mahogany > h2 {
+  margin-top: 3%;
+  font-size: 30px;
+}
+
+.bamboo > h3,
+.black-edition > h3,
+.mahogany > h3 {
+  font-size: 17px;
+}
+
+.bamboo > h4,
+.black-edition > h4,
+.mahogany > h4 {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #3cb4ab;
+}
+
+.mahogany {
+  color: gray;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0%;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  header {
+    background-image: url(./images/image-hero-desktop.jpg);
+    width: 100%;
+    height: 25vw;
+    padding: 3vw;
+    box-shadow: 1px 200px 277px -56px rgba(0, 0, 0, 0.69) inset;
+    -webkit-box-shadow: 1px 200px 277px -56px rgba(0, 0, 0, 0.69) inset;
+    -moz-box-shadow: 1px 200px 277px -56px rgba(0, 0, 0, 0.69) inset;
+  }
+  
+  .burger-logo {
+    display: none;
+  }
+
+  .buttons-in-menu {
+    height: 30px;
+    width: fit-content;
+    overflow: initial;
+    position: initial;
+    background-color: initial;
+    z-index: initial;
+    display: flex;
+    gap: 20px;
+  }
+  .buttons-in-menu > hr {
+    display: none;
+  }
+  .monitor-riser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons-in-menu h3 {
+    padding: 0;
+    color: white;
+  }
+  .burger-top:hover .buttons-in-menu {
+    height: 30px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  .riser-textbox > * {
+    font-size: 2vw;
+  }
+
+  .riser-textbox {
+    font-size: 2vw;
+    margin-top: 10%;
+  }
+
+  .riser-buttons {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .back-this {
+    height: 3vw;
+    width: 13vw;
+    min-width: 180px;
+  }
+  .bookmark {
+    position: relative;
+    height: 56px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    transform: translate(-50%, -50%);
+  }
+}
