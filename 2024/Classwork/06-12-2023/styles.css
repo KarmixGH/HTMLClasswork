@@ -1,0 +1,102 @@
+body {
+  background-color: #eef5ff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 auto;
+  height: 568px;
+  width: 870px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside {
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  width: 275px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.leftsidepart {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 5px 15px;
+}
+
+.step1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: white;
+}
+
+.step2 {
+  background-color: #bde0fe;
+  border: none;
+  color: black;
+}
+
+.info h3 {
+  color: white;
+}
+
+h5 {
+  color: rgb(175, 175, 175);
+}
+
+.rightside {
+  height: 100%;
+  width: 70%;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.pinfo {
+  margin-top: 5%;
+  color: #011d4b;
+}
+
+.inputbars {
+  margin-top: 25px;
+  color: #011d4b;
+  border-color: #011d4b;
+}
+
+.namebar {
+  margin-top: 5px;
+  color: black;
+  border-color: cyan;
+  width: 450px;
+  height: 50px; 
+  border-radius: 15px;
+}
+
+.test {
+  width: 50px;
+  height: 50px;
+  background-color: cyan;
+  border-radius: 50%;
+}
+.button {
+  margin-top: 85px;
+  margin-left: 350px;
+}

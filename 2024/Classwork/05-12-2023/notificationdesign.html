@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(249, 250, 254, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+      }
+      .notifications {
+        height: 800px;
+        width: 650px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 25px;
+      }
+      .boxwith {
+        justify-content: space-between;
+        background-color: #f6fafd;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 15px;
+      }
+      .boxwithout {
+        padding: 15px;
+        margin: 15px;
+      }
+      .ppl {
+        display: flex;
+        align-items: center;
+      }
+      .ppl img {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+      }
+      .ppl .bob {
+        margin: 0;
+        text-align: left;
+      }
+      .gray {
+        color: rgb(90, 90, 90);
+        letter-spacing: 1px;
+      }
+      .blue {
+        color: blue;
+      }
+      .time-text {
+        color: gray;
+      }
+      .pic img {
+        width: 50px;
+        margin-left: 150px;
+      }
+      .comment {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        width: 500px;
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <main class="notifications">
+      <h1>Notifications</h1>
+      <br />
+      <div class="boxwith">
+        <div class="ppl">
+          <img src="assets/images/avatar-mark-webber.webp" />
+          <p class="bob">
+            <strong>Mark Webber</strong> reacted to your recent post
+            <span class="gray">"My first tournament today"</span><br />
+            <span class="time-text">1m ago</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxwith">
+        <div class="ppl">
+          <img src="assets/images/avatar-angela-gray.webp" />
+          <p class="bob">
+            <strong>Angela Gray</strong> followed you<br />
+            <span class="time-text">5m ago</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxwith">
+        <div class="ppl">
+          <img src="assets/images/avatar-jacob-thompson.webp" />
+          <p class="bob">
+            <strong>Jacob Thompson</strong> has joined your group
+            <a href="#"> Chess Club </a> <br />
+            <span class="time-text">1day ago</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxwithout">
+        <div class="ppl">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" />
+          <p class="bob">
+            <strong>Rizky Hasanuddin</strong> sent you a private message:<br />
+            <span class="time-text">5days ago</span>
+          </p>
+        </div>
+      </div>
+      <div style="color: rgb(97, 97, 97)" class="comment">
+        <p>
+          Hello, Thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and im already having lots of fun and imporoving my game
+        </p>
+      </div>
+      <div class="boxwithout">
+        <div class="ppl">
+          <img src="assets/images/avatar-kimberly-smith.webp" />
+          <p class="bob">
+            <strong>Kimberly Smith</strong> commented on your picture
+            <br />
+            <span class="time-text">1week ago</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxwithout">
+        <div class="ppl">
+          <img src="assets/images/avatar-nathan-peterson.webp" />
+          <p class="bob">
+            <strong>Nathan Peterson</strong> reacted to your recent post
+            <span class="gray"
+              >"5 End-game strategies to increase your win rate"</span
+            >
+            <br />
+            <span class="time-text">2weeks ago</span>
+          </p>
+        </div>
+      </div>
+      <div class="boxwithout">
+        <div class="ppl">
+          <img src="assets/images/avatar-anna-kim.webp" />
+          <p class="bob">
+            <strong>Anna Kim</strong> left the group
+            <a href="#"> Chess Club </a> <br />
+            <span class="time-text">2weeks ago</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

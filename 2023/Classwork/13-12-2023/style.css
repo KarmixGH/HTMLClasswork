@@ -1,0 +1,140 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #fafafa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header a:hover {
+  color: black;
+}
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-buttons > *,
+.features > *,
+.features > * > *,
+.company > *,
+.company > * > *,
+.authorization > * > * {
+  color: rgba(0, 0, 0, 0.699);
+}
+.nav-buttons,
+.logo,
+.centering,
+.features > *,
+.company > *,
+.authorization > *,
+.register {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.logo {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.arrow {
+  width: 8px;
+  height: 8px;
+  margin-left: -15px;
+  margin-bottom: -3px;
+  background-image: url("./images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-delay: 0.07s;
+}
+.register  {
+  border: 2px solid rgba(0, 0, 0, 0.575);
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
+.features {
+  position: relative;
+}
+.company {
+  position: relative;
+}
+.drop-down {
+  visibility: hidden;
+  width: 150px;
+  position: absolute;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  top: 30px;
+  left: -40px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition-delay: 0.07s;
+}
+
+.drop-down:hover {
+  visibility: visible;
+}
+.features:hover .drop-down,
+.company:hover .drop-down {
+  visibility: visible;
+}
+.features:hover .arrow,
+.company:hover .arrow {
+  background-image: url(./images/icon-arrow-up.svg);
+}
+
+main {
+  max-width: 1900px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.headertextleft {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+.paragraphtextleft {
+  font-size: 20px;
+  color: rgb(88, 88, 88);
+}
+.learnmore {
+  background-color: black;
+  margin-top: 100px;
+  padding: 10px;
+  height: 50px;
+  width: 120px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.learnmore:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px black solid;
+}
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+  width: 600px;
+}
+.barbelow {
+  margin-top: 100px;
+}
+.rightside {
+  height: 800px;
+  width: 600px;
+  background-image: url(./images/image-hero-desktop.png);
+  background-size: cover;
+}

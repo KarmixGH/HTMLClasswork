@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label,
+      input {
+        margin-top: 1%;
+        padding: 2px;
+        text-align: center;
+      }
+      div.left {
+        position: absolute;
+        top: 10%;
+        left: 36%;
+        text-align: right;
+      }
+      h2, div.buttons{
+        text-align: center;
+      }
+      .cars{
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <form action="#">
+        <h2>Contact Form</h2>
+        <label>
+          First Name:
+          <input type="text" style="width: 350px;" />
+        </label>
+        <br /><br>
+        <label>
+          Last Name:
+          <input type="text" style="width: 350px;" />
+        </label>
+        <br /><br>
+        <label>
+          Email:
+          <input type="email" style="width: 350px;"/>
+        </label>
+        <br /><br>
+        <label for="cars" >Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="audi">Audi</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="bentley">Bentley</option>
+          <option value="honda">Honda</option>
+        </select>
+        <br /><br>
+        <label>
+          Comment:
+          <input type="text" style="width: 350px; height: 70px;"  />
+          <br />
+          <br />
+          <div class="buttons">
+          <input
+            style="
+              height: 40px;
+              width: 80px;
+              background-color: rgb(92, 220, 182);
+              border-color: white;
+              color: white;
+            "
+            type="submit"
+            value="Submit"
+          />
+          <input
+            style="
+              height: 40px;
+              width: 80px;
+              background-color: rgb(255, 255, 255);
+              color: rgb(77, 77, 77);
+              border-color: rgb(189, 189, 189);
+            "
+            type="reset"
+            value="Clear"
+          />
+          </div>
+        </label>
+      </form>
+    </div>
+  </body>
+</html>

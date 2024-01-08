@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+}
+
+body>*{
+    padding: 5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image{
+    width: 90vw;
+    height: 65vw;
+}
+
+.bookmark{
+    display: flex;
+    align-self: flex-end;
+    background-color: #5063d8;
+    border-radius: 25%;
+    width: 70%;
+    height: 5%;
+}
