@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-box {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main-box h2{
+  top: 50%;
+  position: absolute;
+  z-index:-1;
+  font-size: 2vw;
+}
+
+.cube {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.one {
+  background-color: rgb(175, 0, 0);
+  left: 0;
+}
+
+.two {
+  background-color: yellow;
+  right: 0;
+}
+
+.three {
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+}
+
+.four {
+  background-color: green;
+  bottom: 0;
+  right: 0;
+}
+
+.main-box:hover .cube {
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate; 
+}
+
+.main-box:hover .one {
+  animation-name: one;
+  transform-origin: top left;
+}
+
+.main-box:hover .two {
+  animation-name: two;
+  transform-origin: top right;
+}
+
+.main-box:hover .three {
+  animation-name: three;
+  transform-origin: bottom left;
+}
+
+.main-box:hover .four {
+  animation-name: four;
+  transform-origin: bottom right;
+}
+
+@keyframes one {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(95deg);
+    border-radius: 50px;
+    background-color: green;
+  }
+}
+
+@keyframes two {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-95deg);
+    border-radius: 50px;
+    background-color: blue;
+  }
+}
+
+@keyframes three {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-95deg);
+    border-radius: 50px;
+    background-color: yellow;
+  }
+}
+
+@keyframes four {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(95deg);
+    border-radius: 50px;
+    background-color:rgb(175, 0, 0);
+  }
+}

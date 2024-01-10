@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  animation-name: moving-changing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  -webkit-box-shadow: 0px 0px 41px 11px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 41px 11px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 41px 11px rgba(0, 0, 0, 0.2);
+}
+
+.one {
+  animation-name: one;
+}
+
+.two {
+  background-color: blue;
+  animation-name: one;
+}
+
+.three {
+  background-color: yellow;
+  animation-name: one;
+}
+
+.four {
+  background-color: green;
+  animation-name: one;
+}
+
+.five {
+  background-color: cyan;
+  
+}
+
+@keyframes moving-changing {
+  0% {
+    top: 100px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 300px;
+  }
+  75% {
+    top: 400px;
+  }
+  100% {
+    top: 500px;
+  }
+}
+
+@keyframes one{
+    0% {
+      background-color: cyan;
+      top: 100px;
+      left: 0;
+    }
+    25% {
+      background-color:green;
+      top: 200px;
+      left: 100px;
+    }
+    50% {
+      background-color: blue;
+      top: 300px;
+      left: -0;
+    }
+    75% {
+      background-color: yellow;
+      top: 400px;
+      left: 100px;
+    }
+    100% {
+      background-color:  red;
+      top: 500px;
+      left: 0;
+    }
+  }
+
+
