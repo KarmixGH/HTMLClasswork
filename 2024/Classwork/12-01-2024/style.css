@@ -29,7 +29,6 @@ body{
 .menu-container {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .menu-buttons {
@@ -61,15 +60,19 @@ body{
 }
 
 nav {
+  display: flex;
+  flex-direction: row-reverse;
   position: absolute;
-  margin: 5% 5% 15% 5%;
-  top: 0;
+  margin-left: 5%;
+  margin-top: 5%;
+  top: 0%;
+  left: 0; 
   display: flex;
 }
 
 .discover-shop-now {
   padding: 5%;
-  margin-left: 5%;
+  margin-left: 0;
   background-color: white;
 }
 
@@ -114,7 +117,7 @@ h2 {
   color: rgb(110, 110, 110);
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 600px) {
   header {
     display: flex;
     justify-content: space-around;
@@ -134,11 +137,11 @@ h2 {
 
   nav {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
-    margin-left: -10%;
-    gap: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+    gap: 10%;
   }
+
 
   nav * {
     font-size: large;
@@ -151,7 +154,6 @@ h2 {
   .menu-buttons {
     display: flex;
     position: initial;
-    align-items: start;
     padding: 0;
     top: 0;
     right: 0;
