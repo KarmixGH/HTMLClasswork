@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: customfont1;
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+  font-family: customfont2;
+  src: url(./fonts/Oswald-Medium.ttf);
+}
+
+header {
+  width: 100%;
+  height: 11vh;
+  background-color: rgb(209, 35, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-buttons {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(155, 35, 35);
+  padding: 5%;
+  width: 70%;
+  border-radius: 25px;
+  position: absolute;
+  top: 10%;
+  right: -1%;
+  gap: 10%;
+  z-index: 2;
+}
+
+.hamburger:hover .nav-buttons {
+  display: flex;
+}
+
+.hamburger-logo {
+  background-image: url(./image/icon-hamburger.svg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-buttons a {
+  font-family: customfont2;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.nav-buttons a:hover {
+  border: 1px solid white;
+  font-size: larger;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+
+.lets-rock {
+  overflow: hidden;
+  border-bottom: 3px solid rgb(209, 35, 35);
+}
+
+.lets-rock img {
+  align-items: start;
+  margin-left: -40%;
+  height: 200%;
+  width: 200%;
+}
+
+.text-in-lets-rock {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+}
+
+.text-in-lets-rock h2 {
+  font-family: customfont2;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: rgb(209, 35, 35);
+}
+
+.text-in-lets-rock h3 {
+  font-family: customfont1;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.text-in-lets-rock a {
+  position: absolute;
+  background-color: rgb(209, 35, 35);
+  font-family: customfont2;
+  left: 20%;
+  top: 110%;
+  border-radius: 25px;
+  padding: 5%;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.text-in-lets-rock a:hover {
+  background-color: transparent;
+  color: rgb(209, 35, 35);
+  border: 1px solid rgb(209, 35, 35);
+  transition: all ease-in-out 0.2s;
+}
+
+.introducing {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.box {
+  margin-bottom: 10%;
+}
+
+.box img {
+  width: 100%;
+}
+
+.text-in-introducing {
+  margin-top: 5%;
+}
+
+.text-in-introducing,
+.text-in-latest-videos {
+  text-align: center;
+}
+
+.text-in-introducing h2,
+.text-in-latest-videos h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: customfont2;
+}
+
+.text-in-introducing h3,
+.text-in-latest-videos h3 {
+  font-family: customfont1;
+  font-size: 25px;
+  color: rgb(209, 35, 35);
+}
+
+.text-inside-box {
+  font-family: customfont2;
+  background-color: rgb(209, 35, 35);
+  padding: 5%;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.latest-videos video {
+  height: 40vh;
+  width: 100%;
+}
+
+.table-below-videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  margin: 5% 0%;
+  font-family: customfont2;
+  background-color: rgb(235, 235, 235);
+  width: 90%;
+}
+
+td {
+  padding: 1% 5%;
+}
+
+.firstrow {
+  background-color: rgb(209, 35, 35);
+  color: white;
+}
+
+.singer {
+  color: rgb(209, 35, 35);
+}
+
+.newsletter {
+  margin: 5% 0%;
+  color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: customfont2;
+  margin-bottom: 10%;
+}
+
+footer {
+  margin: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-in-footer {
+  margin: 5% 0%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: customfont2;
+}
+
+.buttons-in-footer a {
+  color: black;
+}
+
+.buttons-in-footer a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (min-width: 600px) {
+
+  nav {
+    width: 70%;
+  }
+
+  .hamburger-logo {
+    display: none;
+  }
+
+  .hamburger-logo {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    width: 150%;
+    border-radius: none;
+    position: relative;
+    top: 0%;
+    right: 0;
+    gap: 5%;
+    transform: translate(-25%);
+  }
+
+  .nav-buttons a:hover {
+    padding: 2% 3%;
+    border: none;
+    border-bottom: 1px white solid;
+    font-size: initial;
+  }
+
+  .lets-rock img {
+    align-items: start;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .introducing {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .latest-videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .latest-videos video {
+    width: 60%;
+    height: 60%;
+  }
+
+  .newsletter {
+    margin: 3%;
+  }
+
+  footer {
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: none;
+    margin: 5% 0%;
+    font-family: customfont2;
+    background-color: rgb(235, 235, 235);
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-in-lets-rock {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 40%;
+  }
+}

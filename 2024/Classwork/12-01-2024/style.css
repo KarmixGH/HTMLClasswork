@@ -35,11 +35,11 @@ body{
   display: none;
   position: absolute;
   align-items: center;
-  gap: 5%;
-  left: -20px;
+  gap: 10%;
+  left: -150%;
   padding: 200% 100% 200% 100%;
   top: -200%;
-  width: 425px;
+  width: 100vw;
   background-color: rgb(255, 255, 255);
   z-index: 3;
 }
@@ -157,6 +157,9 @@ h2 {
     padding: 0;
     top: 0;
     right: 0;
+    width: 100%;
+    gap: 20%;
+    margin-left: 10%;
     background-color: transparent;
   }
 
