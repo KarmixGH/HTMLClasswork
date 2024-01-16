@@ -271,7 +271,7 @@ footer {
   }
 
   .nav-buttons a:hover {
-    padding: 2% 3%;
+    padding-bottom:1%;
     border: none;
     border-bottom: 1px white solid;
     font-size: initial;
