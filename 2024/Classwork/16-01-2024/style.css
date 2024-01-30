@@ -38,13 +38,17 @@ nav {
   text-align: center;
   background-color: rgb(155, 35, 35);
   padding: 5%;
-  width: 70%;
+  width: 65%;
   border-radius: 25px;
   position: absolute;
   top: 10%;
   right: -1%;
   gap: 10%;
   z-index: 2;
+  height: 350px;
+  -webkit-box-shadow: 0px 0px 46px 23px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 0px 46px 23px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 0px 46px 23px rgba(0, 0, 0, 0.17);
 }
 
 .hamburger:hover .nav-buttons {
@@ -170,6 +174,16 @@ nav {
   color: white;
 }
 
+.text-inside-box:hover {
+  background-color: #fafafa;
+  border: 1px solid rgb(209, 35, 35);
+  color: rgb(209, 35, 35);
+  transition: all ease-in-out 0.2s;
+  -webkit-box-shadow: 0px 0px 46px 23px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 46px 23px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 46px 23px rgba(0,0,0,0.1);
+}
+
 .latest-videos video {
   height: 40vh;
   width: 100%;
@@ -185,7 +199,7 @@ table {
   margin: 5% 0%;
   font-family: customfont2;
   background-color: rgb(235, 235, 235);
-  width: 90%;
+  width: 60%;
 }
 
 td {
@@ -235,13 +249,11 @@ footer {
 
 .buttons-in-footer a:hover {
   border-bottom: 2px solid black;
-  padding-bottom: 1%;
-  border-radius: 10px;
-  transition: all ease-in-out 0.2s;
+  border-radius: 5px;
+  transition: all ease-in-out 0.1s;
 }
 
 @media screen and (min-width: 600px) {
-
   nav {
     width: 70%;
   }
@@ -268,10 +280,13 @@ footer {
     right: 0;
     gap: 5%;
     transform: translate(-25%);
+    -webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
   }
 
   .nav-buttons a:hover {
-    padding-bottom:1%;
+    padding-bottom: 1%;
     border: none;
     border-bottom: 1px white solid;
     font-size: initial;
@@ -323,10 +338,6 @@ footer {
 @media screen and (max-width: 600px) {
   table {
     display: none;
-    margin: 5% 0%;
-    font-family: customfont2;
-    background-color: rgb(235, 235, 235);
-    width: 90%;
   }
 }
 
