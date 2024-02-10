@@ -193,3 +193,5 @@ if (johnAverage > mikeAverage && johnAverage > maryAverage) {
 } else {
     console.log("It's a draw!");
 }
+
+// yeh
