@@ -37,13 +37,32 @@
     .website {
       margin-top: 20px;
     }
+
+    table {
+      transform: translate(-25%);
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 
 <body>
+
   <main>
 
-    <form id="userForm">
+    <form name="userForm">
 
       <label>Name: <input type="text" name="name" required></label><br>
 
@@ -65,11 +84,29 @@
       <input type="submit" value="Submit">
 
 
-      <tbody class="userlist">
+      <table>
 
-      </tbody>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>nickname</th>
+            <th>email</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>website</th>
+          </tr>
+        </thead>
+
+        <tbody class="users-list">
+
+        </tbody>
+      </table>
+
     </form>
+
   </main>
+
   <script src="./script.js"></script>
 </body>
 
