@@ -127,7 +127,7 @@
 // let johnHeight = 1.85;
 // let johnMass = 102;
 // let johnBmi = johnMass/ (johnHeight*johnHeight);
- 
+
 // // if (johnBmi > markBmi){
 // //     console.log("Johns BMI is " + johnBmi + " and its higher than Marks " + markBmi)
 // // } else {
@@ -164,34 +164,212 @@
 
 
 
-let johnTeamScore = [99, 135, 112];
-let mikeTeamScore = [116, 135, 123];
-let maryTeamScore = [97, 134, 105];
+// let johnTeamScore = [99, 135, 112];
+// let mikeTeamScore = [116, 135, 123];
+// let maryTeamScore = [97, 134, 105];
 
-function calculateAverage(scores) {
-    let sum = 0;
-    for (let i = 0; i < scores.length; i++) {
-        sum += scores[i];
-    }
-    return sum / scores.length;
-}
+// function calculateAverage(scores) {
+//     let sum = 0;
+//     for (let i = 0; i < scores.length; i++) {
+//         sum += scores[i];
+//     }
+//     return sum / scores.length;
+// }
 
-let johnAverage = calculateAverage(johnTeamScore);
-let mikeAverage = calculateAverage(mikeTeamScore);
-let maryAverage = calculateAverage(maryTeamScore);
+// let johnAverage = calculateAverage(johnTeamScore);
+// let mikeAverage = calculateAverage(mikeTeamScore);
+// let maryAverage = calculateAverage(maryTeamScore);
 
-console.log("John's team score is " + johnAverage)
-console.log("Mike's team score is " + mikeAverage)
-console.log("Mary's team score is " + maryAverage)
+// console.log("John's team score is " + johnAverage)
+// console.log("Mike's team score is " + mikeAverage)
+// console.log("Mary's team score is " + maryAverage)
 
-if (johnAverage > mikeAverage && johnAverage > maryAverage) {
-    console.log("John's Team Won! " + johnAverage + " Points in average");
-} else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
-    console.log("Mike's Team Won! " + mikeAverage + " Points in average");
-} else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
-    console.log("Mary's Team Won! " + maryAverage + " Points in average");
-} else {
-    console.log("It's a draw!");
-}
+// if (johnAverage > mikeAverage && johnAverage > maryAverage) {
+//     console.log("John's Team Won! " + johnAverage + " Points in average");
+// } else if (mikeAverage > johnAverage && mikeAverage > maryAverage) {
+//     console.log("Mike's Team Won! " + mikeAverage + " Points in average");
+// } else if (maryAverage > johnAverage && maryAverage > mikeAverage) {
+//     console.log("Mary's Team Won! " + maryAverage + " Points in average");
+// } else {
+//     console.log("It's a draw!");
+// }
 
 // yeh
+
+
+
+
+// let currentYear = 2024;
+// let birthdate = 1937;
+// let firstName = "Johan"
+
+// function calculateAge(birthdate) {
+//     let age = currentYear - birthdate;
+//     return age;
+// }
+
+// function checkRetirement(age, name) {
+//     if (age >= 50) {
+//         console.log(name + " is " + age + " years old and is retired." );
+//     } else {
+//         console.log(name + " is " + age + " years old and isn't old enough for retirement.");
+//     }
+// }
+
+// let age = calculateAge(birthdate);
+// checkRetirement(age, firstName);
+
+
+
+
+
+// let person = "Jake Obama";
+// let profession = "Teacher";
+
+// function description(person, profession) {
+//     if (profession == "Teacher") {
+//         return `${person} Teaches other people.`;
+//     } else {
+//         return `${person} Teaches em smthing that we dont know`
+//     }
+// }
+
+// console.log(description(person, profession));
+
+
+
+
+
+
+
+// const person={
+//     firstName:"Dachi",
+//     lastName:"Bitsadze",
+//     age:18,
+// }
+
+// console.log(person.age)
+
+
+
+// let i = 1
+// while (i<=10){
+//     console.log(i)
+//     i++
+// }
+
+
+
+
+
+// const arrayNumbers=[1,2,3,4,5,6,7,8,9,10];
+// for (let i = 0; i < arrayNumbers.length; i++){
+//     arrayNumbers[i]=arrayNumbers[i]+10
+// }
+// console.log(arrayNumbers)
+
+
+
+
+
+// const arrayNumbers=[1,2,3,4,5,6,7,8,9,10];
+// for(let el of arrayNumbers){
+//     console.log(el)
+// }
+
+
+
+
+
+
+// const arr = [1,2,3,4,5];
+// const mapped = arr.map(element => element + 30)
+// console.log(mapped);
+
+
+// *************************************************************
+
+
+
+// const input = [1, 2, 3, 4, 5];
+// const map = input.map((x) => x **2);
+// console.log(map)
+
+
+
+// const input = [1, -4, 12, 0, -3, 29, -150];
+// const result = input.filter((digit) => digit > 0);
+
+// const initialValue = 0;
+// const sumWithInitial = result.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   initialValue,
+// );
+// console.log(sumWithInitial);
+// console.log(result);
+
+
+
+
+
+// const input = "George Raymond Richard Martin";
+
+// const words = input.split(' ');
+// console.log(words)
+
+// const firstChars = words.map(word => word[0]);
+// console.log(firstChars.join(''));
+
+
+
+
+
+// const input = [
+//     {
+//         name: "John",
+//         age: 13,
+//     },
+//     {
+//         name: "Mark",
+//         age: 56,
+//     },
+//     {
+//         name: "Rachel",
+//         age: 45,
+//     },
+//     {
+//         name: "Nate",
+//         age: 67,
+//     },
+//     {
+//         name: "Jennifer",
+//         age: 65,
+//     },
+// ];
+
+
+// const ages = input.map((person) => person.age);
+
+// const smallestAge = Math.min(...ages);
+// const largestAge = Math.max(...ages);
+// const ageDifference = largestAge - smallestAge;
+
+// const final = [smallestAge, + largestAge, + ageDifference];
+
+// console.log(final)
+
+
+
+// const products = [
+//     { name: "Product 1", price: 20, category: "Electronics" },
+//     { name: "Product 2", price: 30, category: "Clothes" },
+//     { name: "Product 3", price: 40, category: "Electronics" },
+//     { name: "Product 4", price: 50, category: "Clothes" },
+//     { name: "Product 5", price: 60, category: "Clothes" },
+//     { name: "Product 6", price: 70, category: "Electronics" },
+//     { name: "Product 7", price: 80, category: "Clothes" },
+//     { name: "Product 8", price: 90, category: "Electronics" },
+//   ];
+
+
+  
